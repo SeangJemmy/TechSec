@@ -29,7 +29,8 @@ footer {
 }
 
 .navbar ul li a:hover,
-.navbar .active a {
+.navbar .active a,
+.navbar a.active {
   color: #007bff !important;
 }
 
@@ -39,7 +40,7 @@ footer {
 }
 
 .navbar a.dropdown-item:hover,
-.navbar a.active {
+.navbar .dropdown a.active {
   background: #007bff !important;
   color: rgb(245, 245, 245) !important;
 }
