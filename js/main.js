@@ -37,17 +37,23 @@ window.onload = function () {
 };
 
 $(document).ready(function () {
-  const subscriberPath = "../files/subscriberEmail.txt";
-  $("#subscribeEmail").click(function (e) {
+  const subemailform = document.forms["subscribe-email-form"];
+  const subemailURL =
+    "https://script.google.com/macros/s/AKfycbyzrgLU9rhsxo7GxFsUpXCi6P6ASil8RJk_GsWFo3sNPMNOocIhwbKLYmw8s-3wyQE/exec";
+
+  subemailform.addEventListener("submit", (e) => {
     e.preventDefault();
-    var subEm = $("footer form input").val();
+    var subEm = $("#subscribe-email").val();
     if (!subEm || !valEmail(subEm)) {
       alert("You need to enter a valid email address!");
     } else {
-      $("footer form input").val("");
+      fetch(subemailURL, { method: "POST", body: new FormData(subemailform) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
       alert(
         `You have successfully subscribed to our newsletter using email:\n - ${subEm}\n\nThank you for joining our service!\n~ TecSec`
       );
+      $("#subscribe-email").val("Done");
     }
   });
 });
