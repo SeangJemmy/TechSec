@@ -3,7 +3,9 @@ const scriptURL =
 const form = document.forms["techsec-form"];
 
 form.addEventListener("submit", (e) => {
-  $("#submit-date").val(new Date().toLocaleString());
+  $("#submit-date").val(
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Jakarta" })
+  );
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => console.log("Successfully submited!", response))
     .catch((error) => console.error("Error!", error.message));
