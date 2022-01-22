@@ -53,7 +53,7 @@ $(document).ready(function () {
       alert(
         `You have successfully subscribed to our newsletter using email:\n - ${subEm}\n\nThank you for joining our service!\n~ TecSec`
       );
-      $("#subscribe-email").val("Done");
+      $("#subscribe-email").val("");
     }
   });
 });
