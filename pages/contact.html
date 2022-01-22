@@ -141,14 +141,15 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 mx-auto text-center">
-          <form>
+        <div class="col-12 col-sm-6 col-md-4 mx-auto text-center">
+          <form name="techsec-form" id="techsec-form">
             <div><h2 class="mt-4 mb-4">Contact Us</h2></div>
 
-            <label for="name" class="sr-only">Full name</label>
+            <label for="fullname" class="sr-only">Full name</label>
             <input
               type="text"
-              id="username"
+              id="fullname"
+              name="fullname"
               class="form-control mb-1"
               placeholder="Full Name*"
               minlength="5"
@@ -159,6 +160,7 @@
             <label for="username" class="sr-only">Username</label>
             <input
               type="text"
+              name="username"
               id="username"
               class="form-control mb-1"
               placeholder="Username"
@@ -169,13 +171,19 @@
             <input
               type="email"
               id="email"
+              name="email"
               class="form-control mb-1"
               placeholder="Email Address*"
               pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
               required
             />
 
-            <select class="form-control mb-1" required>
+            <select
+              class="form-control mb-1"
+              id="preference"
+              name="preference"
+              required
+            >
               <option selected>Your Preference*</option>
               <option value="customer">Customer</option>
               <option value="supplier">Supplier</option>
@@ -198,6 +206,7 @@
                 robot*</label
               >
             </div>
+            <input name="submit-date" id="submit-date" class="d-none" />
             <div class="mt-1 mb-4">
               <button type="submit" class="btn btn-lg btn-block btn-info">
                 Submit
@@ -208,6 +217,7 @@
       </div>
     </div>
     <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 
   <footer class="text-center">
