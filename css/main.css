@@ -168,7 +168,7 @@ details li {
 
 @media screen and (max-width: 800px) {
   .reason-to-buy-wrapper .grid__cell {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -180,7 +180,7 @@ details li {
   .reason-to-buy-inner {
     flex-wrap: wrap;
     margin: 0px;
-    padding: 0 30px;
+    padding: auto;
     justify-content: flex-start;
   }
 }
