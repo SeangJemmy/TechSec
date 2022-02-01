@@ -1,0 +1,309 @@
+
+/* ########################################### */
+/*                 Global                      */
+/* ########################################### */
+
+
+#forum-alink a{
+    color:#FF0042;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#forum-head-abc{
+    font-size:16px;
+    font-weight: bolder;
+}
+
+
+/* ########################################### */
+/*           Forums.html                       */
+/* ########################################### */
+#forumMCon{
+    margin: 20px;
+    padding: 20px;
+}
+
+#subform-forum{
+    margin-top: 1.25rem;
+}
+#subforum-title-forum
+{
+    background-color: white;
+    height: 4rem;
+}
+#subforum-row-forum{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+    border: 0.1rem black solid;
+    
+}
+#subforum-column-forum-b,  #subforum-column-forum-c,  #subforum-column-forum-d, #subforum-column-forum-a{
+    padding: 0.625rem;
+    margin: 4px;
+    background-color: white;
+    
+}
+#subforum-column-forum-b,  #subforum-column-forum-c, #subforum-column-forum-d
+{
+    border-right: 0.1rem black solid;
+}
+#forum-head-abc{
+    
+    font-size: 3rem;
+ }
+#subforum-column-forum-c{
+    margin-block: 0;
+}
+
+#subforum-column-forum-d, #subforum-column-forum-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subforum-column-forum-d i{
+    font-size: 45px;
+}
+
+#subforum-devider-line{
+    display: none;   
+}
+
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    #forumMCon{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #subforum-row-forum{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    #subforum-devider-line{
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+    }
+
+    #subforum-column-forum-b,  #subforum-column-forum-c,  #subforum-column-forum-d, #subforum-column-forum-a
+    {
+    border: 0.1rem black solid;
+    }
+
+  }
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    #forumMCon{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #subforum-row-forum{
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    #subforum-column-forum-d i{
+        font-size: 35px;
+    }
+
+  }
+/*   Header Section    */
+
+
+/* forum info Styling */
+#forum-info-forum{
+    border: 0.1rem black solid;
+    padding: 25px;
+    background-color: white;
+}
+
+#forum-chart{
+    font-size:20px;
+    font-weight:bold;
+}
+/* Footer Styling */
+
+#forum-footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color:  white;
+    display: block;
+    text-align: center;
+}
+
+/* ########################################### */
+/*            Adminposts.html, Customerpost.html, Productpost.html, Supplierpost.html                      */
+/* ########################################### */
+
+/* posts table's head  */
+#table-head-post{
+    display: flex;
+}
+
+#table-head-post div{
+    padding: 4px;
+    margin: 2.1px;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#table-head-post .status{
+    flex: 5%;
+}
+
+#table-head-post .subjects{
+    flex: 70%;
+}
+
+#table-head-post .replies{
+    flex: 10%;
+}
+
+#table-head-post .last-reply{
+    flex: 15%;
+}
+
+/* posts table's body  */
+
+#table-row-post{
+    display: flex;
+}
+
+#table-row-post .status, #table-row-post .subjects, #table-row-post .replies, #table-row-post .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+#table-row-post .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#table-row-post .subjects{
+    flex: 70%;
+}
+
+#table-row-post .replies{
+    flex: 10%;
+}
+
+#table-row-post .last-reply{
+    flex: 15%;
+}
+
+/* navigation path*/
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate a{
+    color: black;
+}
+
+.navigate a:hover{
+    color:#FF0042;
+    font-weight: bolder;
+}
+
+/* Pagination*/
+
+#pagination-post{
+    padding: 20px;
+    font-size: 15px;
+}
+
+#pagination-post a{
+    color: black;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px black;
+}
+
+#pagination-post a:hover{
+    opacity: 0.5;
+}
+
+#note-post{
+    background-color: blue;
+    padding: 20px;
+    display: block;
+    color: white;
+}
+
+#note-post span{
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+
+/* ########################################### */
+/*            detail.html                      */
+/* ########################################### */
+
+/*
+.authors{
+    flex: 20%;
+}
+
+.content{
+    flex: 80%;
+}
+
+
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors img{
+    max-width: 50px;
+    max-height: 80px;
+}
+
+.body .content .comment button{
+    border:none;
+    padding:10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #fff;
+    cursor: pointer;
+    float: right;
+}
+/*
+/* comment section */
+/*
+.comment-area{
+    margin-bottom:50px;
+}
+
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: solid 1px #000000;
+}
+*/

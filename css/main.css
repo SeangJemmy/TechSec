@@ -40,12 +40,15 @@ footer h4 {
 }
 
 .navbar a.dropdown-item,
-.navbar div.dropdown-menu {
+.navbar div.dropdown-menu,
+.create-forum-post a.dropdown-item,
+.create-forum-post div.dropdown-menu {
   background: rgb(245, 245, 245);
 }
 
 .navbar a.dropdown-item:hover,
-.navbar .dropdown a.active {
+.navbar .dropdown a.active,
+.create-forum-post a.dropdown-item:hover {
   background: #007bff !important;
   color: rgb(245, 245, 245) !important;
 }
@@ -182,5 +185,12 @@ details li {
     margin: 0px;
     padding: auto;
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .forum-t-border {
+    border-left: none;
+    border-right: none;
   }
 }
