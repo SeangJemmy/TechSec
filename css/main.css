@@ -188,8 +188,46 @@ details li {
   }
 }
 
+/*  Forum stuff */
+
+.wrap-col {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+}
+
+.wrap-col p {
+  text-align: justify;
+}
+
+.wrap-border {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+hr.forum-hr {
+  opacity: 0;
+}
+
 @media only screen and (max-width: 767px) {
-  .forum-t-border {
+  .wrap-col {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .wrap-border {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     border-left: none;
     border-right: none;
   }

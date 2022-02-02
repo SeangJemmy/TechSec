@@ -155,143 +155,255 @@
 
     <!-- Start body -->
     <div class="m-3">
-        <!--NavBar Section-->
-        <div class="dropdown text-center create-forum-post container mb-3">
-            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="createforumpost" data-bs-toggle="dropdown" aria-expanded="false">
-              + Create Post
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="createforumpost">
-              <li><a class="dropdown-item" href="#">Create a post in the customer</a></li>
-              <li><a class="dropdown-item" href="#">Create a post in the supplier </a></li>
-              <li><a class="dropdown-item" href="#">Create a post in the product</a></li>
-            </ul>
-          </div>
+      <!--Create Post Section-->
+      <div class="dropdown text-center create-forum-post container my-4">
+        <a
+          class="btn btn-success dropdown-toggle"
+          href="#"
+          role="button"
+          id="createforumpost"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          + Create Post
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="createforumpost">
+          <li>
+            <a class="dropdown-item" href="#">Create a post in the customer</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Create a post in the supplier </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Create a post in the product</a>
+          </li>
+        </ul>
+      </div>
 
-          <!-- Forums Container -->
-    <div id="forum-container" class="container-fluid p-0 m-0">
-
+      <!-- Forums Container -->
+      <div id="forum-container" class="container-fluid p-0 m-0">
         <!--Latest news section-->
         <div class="container border border-dark m-0 p-0 mx-auto">
           <div class="row p-0 m-0 border-bottom border-dark">
             <div id="latest-news" class="col-12 p-0 m-0">
-                <h2 class="bg-warning p-2 m-0 d-flex justify-content-center">Latest News</h2>
+              <h2 class="bg-warning p-2 m-0 d-flex justify-content-center">
+                <i class="fa fa-newspaper-o d-flex my-auto mr-3"></i>Latest News
+              </h2>
             </div>
-          </div>      
-          <div class="row p-0 m-0">
-            <div class="col-12 col-md-6 col-lg-8 m-0 p-3 my-auto">
-              <h4><a href="forumpages/Adminposts.html">Posts from the administrator</a></h4>
-                <p>Messages related to the website from the website administrator.
-                    <ul>
-                        <li>Website maintanence news</li>
-                        <li>Changes to the website</li>
-                        <li>Incoming message from the website administrator</li>
-                    </ul>
+          </div>
+          <div class="row p-3 m-0">
+            <div class="col-12 col-md-6 col-lg-8 m-0 p-0 mb-3">
+              <div class="wrap-col">
+                <h4>
+                  <i class="fa fa-comments"></i>
+                  <a href="forumpages/Adminposts.html"
+                    >Posts from the administrator</a
+                  >
+                </h4>
+                <p class="m-0">
+                  &emsp;&emsp;Messages related to the website from the website
+                  administrator.
                 </p>
+                <ul class="m-0">
+                  <li>Website maintanence news</li>
+                  <li>Changes to the website</li>
+                  <li>Incoming message from the website administrator</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-2 m-0 p-3 my-auto text-center">
-              24 Posts | 12 Topics
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0">
+              <div class="wrap-col wrap-border text-center">
+                <div class="m-0 p-0">
+                  <i class="fa fa-clipboard mb-2"></i>&emsp;24 Posts
+                  <br />
+                  <i class="fa fa-lightbulb-o"></i>&emsp;12 Topics
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-2 m-0 p-3 my-auto text-center">
-                <b><a id="forum-alink" href="#">Last post</a></b> by <a href="#">Admin</a> 
-                <br>on <small>12 Dec 2021</small>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0 text-center">
+              <div class="wrap-col">
+                <div class="m-0">
+                  <b><a id="forum-alink" href="#">Last post</a></b>
+                  by
+                  <br />
+                  <i class="fa fa-user mr-1"></i>
+                  <a href="#">Admin</a>
+                  <br />
+                  on <small>12 Dec 2021</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <!--End of the latest news section-->
-        <hr id="subforum-devider-line"class="subforum-devider">
-        <!--More-->
-        <!--End of the latest news section-->
-         <!--Customer section-->
-        <div id="subform-forum" class="subforum">
-            <div id="subforum-title-forum" class="subforum-title">
-                <h1 id="forum-head-abc"class="bg-primary h-100 w-100 d-inline-block forum-head">Customers</h1>
-            </div>
-            <div id="subforum-row-forum" class="subforum-row">
-                <div id="subforum-column-forum-d" class="subforum-icon subforum-column center">
-                    <i class="fa fa-comments center"></i>
-                </div>
-                <div id="subforum-column-forum-c" class="subforum-description subforum-column">
-                    <h4><a id="forum-alink" href="#">Posts from the customers</a></h4>
-                    <p>Posts from the customer</p>
-                </div>
-                <div id="subforum-column-forum-b" class="subforum-stats subforum-column center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div id="subforum-column-forum-a" class="subforum-info subforum-column-a">
-                    <b><a id="forum-alink" href="">Last post</a></b> by <a href="">Isabella</a> 
-                    <br>on <small>31 Dec 2021</small>
-                </div>
-            </div>
-            <hr id="subforum-devider-line" class="subforum-devider">
-    
-        </div>
-        <!--End of Customer section-->
-        <!--Supplier Section-->
-        <div id="subform-forum" class="subforum">
-            <div id="subforum-title-forum" class="subforum-title">
-                <h1 id="forum-head-abc" class="bg-primary h-100 w-100 d-inline-block forum-head">Supplier</h1>
-            </div>
-            <div id="subforum-row-forum" class="subforum-row">
-                <div id="subforum-column-forum-d" class="subforum-icon subforum-column center">
-                    <i class="fa fa-comments center"></i>
-                </div>
-                <div id="subforum-column-forum-c" class="subforum-description subforum-column">
-                    <h4><a id="forum-alink" href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div id="subforum-column-forum-b" class="subforum-stats subforum-column center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div  id="subforum-column-forum-a" class="subforum-info subforum-column-a">
-                    <b><a href="">Last post</a></b> by <a id="forum-alink" href="">Justine</a> 
-                    <br>on <small>29 Dec 2021</small>
-                </div>
-            </div>
-            <hr id="subforum-devider-line" class="subforum-devider">
-        <!---->   
 
-           
-        </div>
-        <!--End Supplier section-->
-        <!--Product Section-->
-        <div id="subform-forum" class="subforum">
-            <div id="subforum-title-forum" class="subforum-title">
-                <h1 id="forum-head-abc" class="bg-primary h-100 w-100 d-inline-block forum-head">Product</h1>
+        <hr class="forum-hr" />
+
+        <!-- Customer Section -->
+        <div class="container border border-dark m-0 p-0 mx-auto">
+          <div class="row p-0 m-0 border-bottom border-dark">
+            <div id="customer" class="col-12 p-0 m-0">
+              <h2
+                class="bg-primary p-2 m-0 d-flex justify-content-center text-white"
+              >
+                <i class="fa fa-users d-flex my-auto mr-3"></i>
+                Customer
+              </h2>
             </div>
-            <div id="subforum-row-forum" class="subforum-row">
-                <div id="subforum-column-forum-d" class="subforum-icon subforum-column center">
-                    <i class="fa fa-comments center"></i>
-                </div>
-                <div id="subforum-column-forum-c" class="subforum-description subforum-column">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div id="subforum-column-forum-b" class="subforum-stats subforum-column center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div id="subforum-column-forum-a" class="subforum-info subforum-column-a">
-                    <b><a id="forum-alink" href="">Last post</a></b> by <a href="">Mona</a> 
-                    <br>on <small>12 Dec 2021</small>
-                </div>
+          </div>
+          <div class="row p-3 m-0">
+            <div class="col-12 col-md-6 col-lg-8 m-0 p-0 mb-3">
+              <div class="wrap-col">
+                <h4>
+                  <i class="fa fa-comments"></i>
+                  <a href="forumpages/Customerpost.html">
+                    Posts from the customers</a
+                  >
+                </h4>
+                <p class="m-0">
+                  &emsp;&emsp;Thanks for providing good platform for buying
+                  affordable products!
+                </p>
+              </div>
             </div>
-            <hr id="subforum-devider-line" class="subforum-devider">
-           <!--Product Section End-->
-
-           
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0">
+              <div class="wrap-col wrap-border text-center">
+                <div class="m-0 p-0">
+                  <i class="fa fa-clipboard mb-2"></i>&emsp;24 Posts
+                  <br />
+                  <i class="fa fa-lightbulb-o"></i>&emsp;12 Topics
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0 text-center">
+              <div class="wrap-col">
+                <div class="m-0">
+                  <b><a id="forum-alink" href="#">Last post</a></b>
+                  by
+                  <br />
+                  <i class="fa fa-user mr-1"></i>
+                  <a href="#">Anonymous</a>
+                  <br />
+                  on <small>31 Dec 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!---->
-    </div>
+        <!-- End Customer Section -->
 
-    <!-- Forum Info -->
-    <div id="forum-info-forum"class="forum-info">
-        <div id="forum-chart" class="chart">
-            MyForum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+        <hr class="forum-hr" />
+
+        <!-- Supplier Section-->
+        <div class="container border border-dark m-0 p-0 mx-auto">
+          <div class="row p-0 m-0 border-bottom border-dark">
+            <div id="supplier" class="col-12 p-0 m-0">
+              <h2
+                class="bg-primary p-2 m-0 d-flex justify-content-center text-white"
+              >
+                <i class="fa fa-handshake-o d-flex my-auto mr-3"></i>
+                Supplier
+              </h2>
+            </div>
+          </div>
+          <div class="row p-3 m-0">
+            <div class="col-12 col-md-6 col-lg-8 m-0 p-0 mb-3">
+              <div class="wrap-col">
+                <h4>
+                  <i class="fa fa-comments"></i>
+                  <a href="forumpages/Supplierpost.html"
+                    >Posts from the suppliers</a
+                  >
+                </h4>
+                <p class="m-0">
+                  &emsp;&emsp;Thanks for providing good platform for selling
+                  products!
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0">
+              <div class="wrap-col wrap-border text-center">
+                <div class="m-0 p-0">
+                  <i class="fa fa-clipboard mb-2"></i>&emsp;24 Posts
+                  <br />
+                  <i class="fa fa-lightbulb-o"></i>&emsp;12 Topics
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0 text-center">
+              <div class="wrap-col">
+                <div class="m-0">
+                  <b><a id="forum-alink" href="#">Last post</a></b>
+                  by
+                  <br />
+                  <i class="fa fa-user mr-1"></i>
+                  <a href="#">Anonymous</a>
+                  <br />
+                  on <small>31 Dec 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
-        <span>Latest post: <b><a id="forum-alink" href="">Random post</a></b> on Dec 15 2021 By <a href="">RandomUser</a></span>.<br>
-        <span>Check <a id="forum-alink" id="forum-alink" href="">the latest posts</a> .</span><br>
-    </div>
+        <!-- End Supplier section-->
 
+        <hr class="forum-hr" />
+
+        <!-- Product Section-->
+        <div class="container border border-dark m-0 p-0 mx-auto">
+          <div class="row p-0 m-0 border-bottom border-dark">
+            <div id="product" class="col-12 p-0 m-0">
+              <h2
+                class="bg-primary p-2 m-0 d-flex justify-content-center text-white"
+              >
+                <i class="fa fa-archive d-flex my-auto mr-3"></i>
+                Product
+              </h2>
+            </div>
+          </div>
+          <div class="row p-3 m-0">
+            <div class="col-12 col-md-6 col-lg-8 m-0 p-0 mb-3">
+              <div class="wrap-col">
+                <h4>
+                  <i class="fa fa-comments"></i>
+                  <a href="forumpages/Productpost.html"
+                    >Posts about the products</a
+                  >
+                </h4>
+                <p class="m-0">
+                  &emsp;&emsp;More poducts need to be added to your platform! We
+                  support your website! Thank you!
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0">
+              <div class="wrap-col wrap-border text-center">
+                <div class="m-0 p-0">
+                  <i class="fa fa-clipboard mb-2"></i>&emsp;24 Posts
+                  <br />
+                  <i class="fa fa-lightbulb-o"></i>&emsp;12 Topics
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 m-0 p-0 text-center">
+              <div class="wrap-col">
+                <div class="m-0">
+                  <b><a id="forum-alink" href="#">Last post</a></b>
+                  by
+                  <br />
+                  <i class="fa fa-user mr-1"></i>
+                  <a href="#">Anonymous</a>
+                  <br />
+                  on <small>31 Dec 2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Prodcut Section-->
+
+        <hr class="forum-hr" />
+      </div>
     </div>
     <!-- End body -->
     <script src="../js/main.js" type="text/javascript"></script>
