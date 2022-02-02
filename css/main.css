@@ -121,7 +121,8 @@ details li {
 }
 
 .reason-to-buy h2,
-.reason-to-buy .h2 {
+.reason-to-buy .h2,
+footer h4 {
   font-size: 1.5em;
   font-weight: bold;
   width: 100%;
