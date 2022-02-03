@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechSec - Conatact Us</title>
+    <!-- shows in browser tab-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- external css links -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img class="UpArrow_style" src="../images/Up-Arrow.svg" width="30" />
+    </button>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="../index.html">
+        <img
+          loading="lazy"
+          src="../images/logo.svg"
+          alt=""
+          height="50"
+          class="d-inline-block logo"
+        />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto text-center mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/product.html">PRODUCT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/forum.html">FORUM</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/login.html">LOGIN</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ABOUT
+            </a>
+            <div
+              class="dropdown-menu text-center"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="../pages/about.html">About Us</a>
+              <a class="dropdown-item active" href="../pages/contact.html"
+                >Contact Us</a
+              >
+              <a class="dropdown-item" href="../pages/faq.html">FAQ</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../pages/pp.html"
+                >Privacy Policy</a
+              >
+              <a class="dropdown-item" href="../pages/tos.html"
+                >Terms of Service</a
+              >
+              <a class="dropdown-item" href="../pages/tracking.html"
+                >Tracking</a
+              >
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 justify-content-center">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <img
+              loading="lazy"
+              src="../images/mag.png"
+              alt=""
+              width="25"
+              height="25"
+            />
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Form Start -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 mx-auto text-center">
+          <form name="techsec-form" id="techsec-form">
+            <div><h2 class="mt-4 mb-4">Contact Us</h2></div>
+
+            <label for="fullname" class="sr-only">Full name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              class="form-control mb-1"
+              placeholder="Full Name*"
+              minlength="5"
+              required
+              autofocus
+            />
+
+            <label for="username" class="sr-only">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form-control mb-1"
+              placeholder="Username"
+              minlength="5"
+            />
+
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control mb-1"
+              placeholder="Email Address*"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              required
+            />
+
+            <select
+              class="form-control mb-1"
+              id="preference"
+              name="preference"
+              required
+            >
+              <option selected>Your Preference*</option>
+              <option value="customer">Customer</option>
+              <option value="supplier">Supplier</option>
+              <option value="guest">Guest</option>
+            </select>
+
+            <textarea
+              class="form-control"
+              style="text-align: left !important"
+              id="description"
+              name="description"
+              rows="7"
+              placeholder="Describe your concerns*"
+              required
+            ></textarea>
+
+            <div class="checkbox mt-2 mb-1">
+              <label>
+                <input type="checkbox" value="agree" required /> I'm not a
+                robot*</label
+              >
+            </div>
+            <input name="submit-date" id="submit-date" class="d-none" />
+            <div class="mt-1 mb-4">
+              <button type="submit" class="btn btn-lg btn-block btn-info">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+
+  <footer class="text-center">
+    <section class="reason-to-buy">
+      <h2>
+        <span> GREAT REASONS TO USE OUR SERVICE </span>
+      </h2>
+
+      <div class="reason-to-buy-wrapper">
+        <div class="reason-to-buy-inner grid">
+          <div class="grid__cell pr-5 mr-10">
+            <img src="../images/customer-satisfaction_1.png" />
+            <div>
+              <h3>Satisfaction Guarantee</h3>
+              <p>
+                We focus on high-quality products and provide good customer
+                support to our users.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid__cell pr-5 mr-10">
+            <img src="../images/safety.png" />
+            <div>
+              <h3>Verified & Trusted</h3>
+              We verify each product details and prices professionally to ensure
+              accuracy.
+            </div>
+          </div>
+
+          <div class="grid__cell pr-5 mr-10">
+            <img src="../images/sale.png" />
+            <div>
+              <h3>Great Value</h3>
+              <p>
+                Using our service will save you a lot of money and research
+                time.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid__cell pr-5 mr-10">
+            <img src="../images/world.png" />
+            <div>
+              <h3>Local Optimization</h3>
+              <p>
+                We frequently update product prices to match the market prices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h4 class="mt-1 mb-2">Subscribe to our Newsletter</h4>
+    <form class="form-inline my-2" name="subscribe-email-form">
+      <div class="container my-3">
+        <div class="row mx-auto justify-content-center">
+          <input
+            name="subscribe-email"
+            id="subscribe-email"
+            class="form-control col-9 col-md-6"
+            type="email"
+            placeholder="Email"
+            aria-label="Email"
+          />
+          <button
+            class="btn btn-warning col-2 col-md-1 col-lg-1 ml-1"
+            type="submit"
+            id="subscribeEmail"
+          >
+            <img src="../images/arrow-filled.png" width="15px" />
+          </button>
+        </div>
+      </div>
+    </form>
+    <a href="https://www.techsec.cf/"
+      >© TechSec <span id="copyrightFooter"></span
+    ></a>
+  </footer>
+</html>
